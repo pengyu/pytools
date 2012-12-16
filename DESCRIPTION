@@ -1,0 +1,45 @@
+Package: pytools
+Type: Package
+Title: Peng Yu's Toolbox
+Version: 0.0.0
+Date: 2012-10-11
+Author: Peng Yu
+Maintainer: Peng Yu <pengyu@gmail.com>
+Description: Many R core functions violate the well-known Unix philosophy
+    "Write programs that do one thing and do it well."
+    <http://en.wikipedia.org/wiki/Unix_philosophy> Instead, they try to do many
+    things at the same time. A nonexhaust list includes read.table, file. The
+    package fix this problem by providing wrappers to these intruding functions
+    once they are found. There are also other subtle bugs (including
+    performance bugs), they are fixed as well once found.
+License: GPL-2
+Collate:
+    'as.factor.data.frame.R'
+    'fast_split.R'
+    'read.tsv.R'
+    'file.R'
+    'system.R'
+    'data.frame.R'
+    'library.R'
+    'write.tsv.R'
+    'intersect2.R'
+    'setSelfNames.R'
+    'head_recurse.R'
+    'tail_recurse.R'
+    'kernel.tricube.R'
+    'kernel.triweight.R'
+    'blkcmt.R'
+    'enumgrp.R'
+    'rowVars.R'
+    'set_fisher.test.R'
+    'unlist.R'
+    'locmax.R'
+    'locmin.R'
+    'kernapply.ts.R'
+    'write.tsv.list.R'
+    'unrownames.R'
+    'sort.R'
+    'history.R'
+    'combn.R'
+    'stopif.R'
+    'write.xlsx2.R'

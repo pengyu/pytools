@@ -1,0 +1,4 @@
+~~~
+locmax is more complete than than locmin
+~~~
+

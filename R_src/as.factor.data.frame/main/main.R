@@ -1,0 +1,7 @@
+#system('Rpkgins.sh')
+suppressPackageStartupMessages(library(pytools))
+#source('../as.factor.data.frame.R')
+tmp=data.frame(x=letters[1:10], y=1:10, stringsAsFactors=F)
+#str(as.factor.data.frame(tmp))
+#str(as.factor(tmp))
+str(as.factor(tmp))
