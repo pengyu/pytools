@@ -6,7 +6,7 @@
 #' @param y a \code{\link[base]{data.frame}}
 #' @keywords array manip
 #' @rdname setdiff
-#' @export setdiff data.frame
+#' @export setdiff
 #' @seealso \code{\link[base]{setdiff}}
 #' @examples
 #' x=data.frame(z1=letters[1:3], x=1:3)
@@ -30,7 +30,7 @@ setdiff=function(x, y) UseMethod('setdiff')
 #' @rdname setdiff
 #' @method setdiff default
 #' @S3method setdiff default
-setdiff.data.frame=base::setdiff
+setdiff.default=base::setdiff
 
 #' @return \code{NULL}
 #'

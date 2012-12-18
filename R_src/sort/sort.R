@@ -6,11 +6,13 @@
 #' @param decreasing logical
 #' @param ... additional arguments
 #' @keywords manip
+#' @import devtools
 #' @export
 #' @examples
 #' sort(c('A', 'a'))
 sort=function(x, decreasing=F, ...) {
-  Sys.setlocale(category='LC_ALL', locale='C')
+  old_collate=devtools:::set_collate('C')
+  on.exit(devtools:::set_collate(old_collate))
   base::sort(x, decreasing, ...)
 }
 

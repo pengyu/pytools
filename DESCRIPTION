@@ -4,7 +4,7 @@ Title: Peng Yu's Toolbox
 Version: 0.0.0
 Date: 2012-10-11
 Author: Peng Yu
-Maintainer: Peng Yu <pengyu@gmail.com>
+Maintainer: Peng Yu <pengyu.ut@gmail.com>
 Description: Many R core functions violate the well-known Unix philosophy
     "Write programs that do one thing and do it well."
     <http://en.wikipedia.org/wiki/Unix_philosophy> Instead, they try to do many
@@ -43,3 +43,5 @@ Collate:
     'combn.R'
     'stopif.R'
     'write.xlsx2.R'
+    'setdiff.data.frame.R'
+    'intersect.data.frame.R'
