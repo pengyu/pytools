@@ -51,3 +51,6 @@ Collate:
     'read.csv.R'
     'read.uneven.tsv.R'
     'hwrite.list.R'
+    'mergele.R'
+    'evalstr.R'
+    'unblkcmt.R'

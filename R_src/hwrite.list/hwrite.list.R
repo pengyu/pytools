@@ -28,7 +28,6 @@
 #' hwrite(x, p)
 #' closePage(p)
 hwrite.list=function(x, page, prefix=c(), prompt='>', ...) {
-  currfun=match.fun(sys.call()[[1]])
   invisible(
     lapply(
       if(is.null(names(x))) {
@@ -38,8 +37,13 @@ hwrite.list=function(x, page, prefix=c(), prompt='>', ...) {
       }
       , function(n) {
         prefix=c(prefix, n)
-        hwrite(c(prefix, prompt), page=p)
-        hwrite(x[[n]], page, prefix=prefix, prompt=prompt, ...)
+        hwrite(c(prefix, prompt), page)
+        x=x[[n]]
+        if(is.list(x) && !is.data.frame(x)) {
+          hwrite.list(x, page, prefix=prefix, prompt=prompt, ...)
+        } else {
+          hwrite(x, page, ...)
+        }
       }
       )
     )
