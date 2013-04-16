@@ -1,7 +1,7 @@
 Package: pytools
 Type: Package
 Title: Peng Yu's Toolbox
-Version: 0.0.0
+Version: 0.0.1
 Date: 2012-10-11
 Author: Peng Yu
 Maintainer: Peng Yu <pengyu.ut@gmail.com>
@@ -9,7 +9,7 @@ Description: Many R core functions violate the well-known Unix philosophy
     "Write programs that do one thing and do it well."
     <http://en.wikipedia.org/wiki/Unix_philosophy> Instead, they try to do many
     things at the same time. A nonexhaust list includes read.table, file. The
-    package fix this problem by providing wrappers to these intruding functions
+    package fixes this problem by providing wrappers to these intruding functions
     once they are found. There are also other subtle bugs (including
     performance bugs), they are fixed as well once found.
 License: GPL-2
@@ -37,7 +37,6 @@ Collate:
     'locmin.R'
     'kernapply.ts.R'
     'write.tsv.list.R'
-    'unrownames.R'
     'sort.R'
     'history.R'
     'combn.R'
@@ -54,3 +53,9 @@ Collate:
     'mergele.R'
     'evalstr.R'
     'unblkcmt.R'
+    'exgrep.R'
+    'mean.table.R'
+    'var.table.R'
+    'median.table.R'
+    'rngrep.R'
+    'file.show.R'
